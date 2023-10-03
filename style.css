@@ -1,41 +1,124 @@
 * {
-    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-
-.menu {
-    list-style-type: none;
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(253, 121, 168, 0.4) 70%, white 30%);
 }
 
-.menu ul li {
-    background-color: red;
-    border: 1px solid white;
-    width: 120px;
-    height: 35px;
-    text-align: center;
-    line-height: 35px;
-    float: left;
-    position: relative;
-
+.top-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 70px;
 }
 
-.menu ul li a {
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+}
+
+.logo {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu a {
     text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.menu a:first-child {
+    background: #e84393;
     color: white;
-    display: block;
 }
 
-.menu ul ul {
-    position: absolute;
-    display: none;
+.menu a:hover {
+    background: #e84393;
+    color: white;
+    transition: 0.4s;
 }
 
-.menu ul li:hover>ul {
-    display: block;
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
 }
 
-.menu ul li a:hover {
-    background-color: green;
+.left {
+    flex-basis: 50%;
+}
+
+.left h1 {
+    font-size: 4rem;
+}
+
+.left h1 span {
+    background: #e84393;
+    color: white;
+    border-radius: 5px;
+    padding: 0px 15px;
+}
+
+.left p {
+    margin: 30px 20px;
+    line-height: 2rem;
+}
+
+.right {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+#btn1 {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    background: #e84393;
+    cursor: pointer;
+}
+
+#btn1:hover {
+    background: transparent;
+    border: 1px solid #e84393;
+    color: black;
+
+}
+
+#btn2 {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+    color: white;
+    background: transparent;
+    color: black;
+    border: 1px solid #e84393;
+}
+
+#btn2:hover {
+    background: #e84393;
+    color: white;
+    cursor: pointer;
 }
