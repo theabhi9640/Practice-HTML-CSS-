@@ -1,124 +1,146 @@
 * {
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
-}
-
-header {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to right, rgba(253, 121, 168, 0.4) 70%, white 30%);
-}
-
-.top-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 70px;
-}
-
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 70px;
-}
-
-.logo {
-    color: black;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.menu a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.menu a:first-child {
-    background: #e84393;
-    color: white;
-}
-
-.menu a:hover {
-    background: #e84393;
-    color: white;
-    transition: 0.4s;
+    padding: 0;
+    font-family: sans-serif, Roboto;
 }
 
 .container {
     width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/background.png);
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 12%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 70px;
 }
 
-.left {
-    flex-basis: 50%;
+.logo {
+    width: 50px;
+    cursor: pointer;
 }
 
-.left h1 {
-    font-size: 4rem;
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
 }
 
-.left h1 span {
-    background: #e84393;
-    color: white;
-    border-radius: 5px;
-    padding: 0px 15px;
-}
-
-.left p {
-    margin: 30px 20px;
-    line-height: 2rem;
-}
-
-.right {
-    flex-basis: 50%;
+nav {
+    flex: 1;
     text-align: right;
 }
 
-#btn1 {
-    padding: 10px 20px;
-    border: none;
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+nav ul li a:hover {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+    line-height: 15px;
+}
+
+p {
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+    margin-top: 40px;
+}
+
+
+button {
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
     outline: none;
-    color: white;
-    border-radius: 5px;
-    background: #e84393;
+    margin-top: 30px;
+}
+
+button:hover {
     cursor: pointer;
-}
-
-#btn1:hover {
     background: transparent;
-    border: 1px solid #e84393;
-    color: black;
-
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s;
+    font-size: 12px;
 }
 
-#btn2 {
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-
-    color: white;
-    background: transparent;
-    color: black;
-    border: 1px solid #e84393;
-}
-
-#btn2:hover {
-    background: #e84393;
-    color: white;
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
     cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1 {
+    background-image: url(images/pic-1.png);
+}
+
+.card2 {
+    background-image: url(images/pic-2.png);
+}
+
+.card3 {
+    background-image: url(images/pic-3.png);
+}
+
+.card4 {
+    background-image: url(images/pic-4.png);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h5 {
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p {
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
 }
