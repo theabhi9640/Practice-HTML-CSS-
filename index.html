@@ -4,26 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page Design</title>
+    <title>PS Form </title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
     <div class="wrapper">
-        <nav class="navbar">
-            <img src="logo.png" alt="" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Packages</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <form>
+            <fieldset>
+                <legend>
+                    <h1>Student Registration Form</h1>
+                </legend>
+                <div>
+                    Name : <input type="text">
+                </div> <br>
+                <div>
+                    Father's Name : <input type="text">
+                </div> <br>
+                <div>
+                    Mother's Name : <input type="text">
+                </div> <br>
+                <div>
+                    Phone No. : <input type="text">
+                </div> <br>
+                <div>
+                    Email : <input type="text">
+                </div> <br>
+                <div>
+                    Gender : Male <input type="radio" name="My gender">
+                    Female : <input type="radio" name="My gender">
+                    Others: <input type="radio" name="My gender">
+                </div> <br>
+                <div>
+                    Date of Birth : <input type="date">
+                </div> <br>
+                <div>
+                    Adress : <input type="text">
+                </div> <br>
+                <div>
+                    Blood Group <select name="Drop-down" id="">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="A+">A+</option>
+                        <option value="B+">B+</option>
+                    </select>
+                </div> <br>
+                <div>
+                    Department : CSE <input type="radio">
+                    BBA <input type="radio">
+                    EEE <input type="radio">
+                </div> <br>
+                <div>
+                    Course : Java <input type="checkbox">
+                    C++ <input type="checkbox">
+                    Machine Learning <input type="checkbox">
+                    Web Development <input type="checkbox">
+                </div> <br>
 
-        <div class="main-section">
-            <h1>Holiday Special Travel Packages</h1>
-            <button>Explore Now</button>
-        </div>
+                <div>
+                    Photo : <input type="file">
+                </div> <br>
+
+                <button>Reset</button>
+                <button>Submt</button>
+            </fieldset>
+        </form>
     </div>
 </body>
 
