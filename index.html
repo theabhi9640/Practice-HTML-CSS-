@@ -4,60 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barber Shop</title>
+    <title>Gym Website</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
-    <section id="banner">
-        <img src="Barber_Shop_img/logo.png" alt="" class="logo">
-        <div class="banner-text">
-            <h1>Hair Studio</h1>
-            <p>Style Your Is Style Your Life </p>
-            <div class="banner-btn">
-                <a href="#">Find Out</a>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- <div class="sidenav">
+    <div class="wrapper">
         <nav>
+            <h1><span>Fit</span> N <span>Fine</span></h1>
             <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">FEATURES</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">TESTIMONIALS</a></li>
-                <li><a href="#">MEET US</a></li>
+                <li><a href="#">OFFER</a></li>
+                <li><a href="#">NEAR GYM</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <button id="learn-more">Learn More</button>
             </ul>
         </nav>
-    </div> -->
-    <div id="menuBtn">
-        <img src="Barber_Shop_img/menu.png" alt="" id="menu">
-    </div>
-    <!-- Features  -->
-    <section id="feature">
-        <div class="title-text">
-            <p>FEATURES</p>
-            <h1>Why Choose Us</h1>
+        <div class="main-content">
+            <h2>FITNESS CLUB.</h2>
+            <P>If you want something you've had, you must be <br>willing to do something.</P>
         </div>
-    </section>
 
-
-
-    <script>
-        var menuBtn = document.getElementById("menuBtn")
-        var menuBtn = document.getElementById("sidenav")
-        var menuBtn = document.getElementById("menu")
-
-        menuBtn.onclick = function () {
-            if (sidenav.style.right == "-250px") {
-                sidenav.style.right = "0";
-            } else {
-                sidenav.style.right = "-250px";
-            }
-        }
-    </script>
+        <button class="button">Join Now</button>
+    </div>
 </body>
 
 </html>
