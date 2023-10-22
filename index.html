@@ -4,35 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Design 6</title>
+    <title>PS Form </title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
-    <nav>
-        <h1>Zomato</h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Order</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <div class="wrapper">
+        <form>
+            <fieldset>
+                <legend>
+                    <h1>Student Registration Form</h1>
+                </legend>
+                <div>
+                    Name : <input type="text">
+                </div> <br>
+                <div>
+                    Father's Name : <input type="text">
+                </div> <br>
+                <div>
+                    Mother's Name : <input type="text">
+                </div> <br>
+                <div>
+                    Phone No. : <input type="text">
+                </div> <br>
+                <div>
+                    Email : <input type="text">
+                </div> <br>
+                <div>
+                    Gender : Male <input type="radio" name="My gender">
+                    Female : <input type="radio" name="My gender">
+                    Others: <input type="radio" name="My gender">
+                </div> <br>
+                <div>
+                    Date of Birth : <input type="date">
+                </div> <br>
+                <div>
+                    Adress : <input type="text">
+                </div> <br>
+                <div>
+                    Blood Group <select name="Drop-down" id="">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="A+">A+</option>
+                        <option value="B+">B+</option>
+                    </select>
+                </div> <br>
+                <div>
+                    Department : CSE <input type="radio">
+                    BBA <input type="radio">
+                    EEE <input type="radio">
+                </div> <br>
+                <div>
+                    Course : Java <input type="checkbox">
+                    C++ <input type="checkbox">
+                    Machine Learning <input type="checkbox">
+                    Web Development <input type="checkbox">
+                </div> <br>
 
-        <div class="btn">
-            <button>Login</button>
-            <button>Sign Up</button>
-        </div>
-    </nav>
+                <div>
+                    Photo : <input type="file">
+                </div> <br>
 
-    <!-- main page html -->
-    <div class="main-div">
-        <div class="head">
-            <h1>Stay fit <br> Eat healthy</h1>
-            <button>Order Now</button>
-        </div>
-        <div class="img">
-            <img src="images/grid_image1.png" alt="">
-        </div>
+                <button>Reset</button>
+                <button>Submt</button>
+            </fieldset>
+        </form>
     </div>
 </body>
 
