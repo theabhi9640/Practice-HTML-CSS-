@@ -1,0 +1,56 @@
+* {
+
+    box-sizing: border-box;
+}
+
+.wrapper {
+    /* background-color: rgb(165, 192, 237); */
+    margin: 20px 20px;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    background-color: rgb(155, 233, 212);
+    padding: 10px;
+    padding-left: 10px;
+    width: 500px;
+    margin-left: 500px;
+}
+
+button {
+    width: 100px;
+    height: 35px;
+    float: right;
+    border-radius: 30px;
+    border: 2px solid rgb(254, 254, 254);
+}
+
+#btn1 {
+    background-color: red;
+    margin-right: 10px;
+    cursor: pointer;
+    /* background: transparent; */
+}
+
+#btn2 {
+    background-color: red;
+    cursor: pointer;
+    text-align: center;
+    /* background: transparent; */
+}
+
+h1 {
+    color: rgb(2, 2, 60);
+}
+
+fieldset {
+    border: 2px solid rgb(179, 29, 29);
+}
+
+button:hover {
+    width: 120px;
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+}
